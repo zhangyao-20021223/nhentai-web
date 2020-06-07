@@ -31,9 +31,10 @@
         background-color: antiquewhite;
     }
     #windows {
-        width: 10rem;
-        height: 10rem;
-        background-color: aliceblue;
+        width: 50rem;
+        height: 50rem;
+        background-color: rgb(73, 93, 110);
         margin: 0 auto;
+        transform: translateY(10%);
     }
 }
