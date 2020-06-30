@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
     height: 0px;
     background-color: rgba(236, 240, 241, 1.0);
 }
@@ -30,11 +30,5 @@
         width: 100vw;
         background-color: antiquewhite;
     }
-    #windows {
-        width: 50rem;
-        height: 50rem;
-        background-color: rgb(73, 93, 110);
-        margin: 0 auto;
-        transform: translateY(10%);
-    }
+    #windows {}
 }
