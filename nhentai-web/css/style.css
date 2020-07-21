@@ -18,17 +18,4 @@
 
 @media (max-width: 500px) {}
 
-@media (min-width: 501px) {
-    #box-head {
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(142, 68, 173, 1.0);
-        position: relative;
-    }
-    #box-foot {
-        height: 30vh;
-        width: 100vw;
-        background-color: antiquewhite;
-    }
-    #windows {}
-}
+@media (min-width: 501px) {}
