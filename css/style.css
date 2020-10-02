@@ -16,16 +16,14 @@
     border-radius: 10px;
 }
 
-#windows {
-    background: rgb(219, 99, 61);
-    background: -moz-linear-gradient(56deg, rgba(219, 99, 61, 1) 0%, rgba(70, 16, 110, 1) 100%);
-    background: -webkit-linear-gradient(56deg, rgba(219, 99, 61, 1) 0%, rgba(70, 16, 110, 1) 100%);
-    background: linear-gradient(56deg, rgba(219, 99, 61, 1) 0%, rgba(70, 16, 110, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#db633d", endColorstr="#46106e", GradientType=1);
-    width: 100vw;
-    height: 100vh;
-}
-
 @media (max-width: 500px) {}
 
-@media (min-width: 501px) {}
+@media (min-width: 501px) {
+	#windows {
+		background: rgb(130,29,124);
+		background: -moz-linear-gradient(90deg, rgba(130,29,124,1) 6%, rgba(50,122,180,1) 92%);
+		background: -webkit-linear-gradient(90deg, rgba(130,29,124,1) 6%, rgba(50,122,180,1) 92%);
+		background: linear-gradient(90deg, rgba(130,29,124,1) 6%, rgba(50,122,180,1) 92%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#821d7c",endColorstr="#327ab4",GradientType=1);
+	}
+}
