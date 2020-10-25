@@ -1,25 +1,43 @@
+/* 标准开头 */
 * {
     padding: 0px;
     margin: 0px;
 }
-
-::-webkit-scrollbar {
+/* 以下两个webkit滑动条设置,目前将其设置为0px,来显示无滑动条的页面,也可以设置成为其他的样式 */
+{
+	::-webkit-scrollbar {
     width: 0px;
     height: 0px;
     background-color: rgba(236, 240, 241, 1.0);
-}
-
-::-webkit-scrollbar-thumb {
+	}
+	::-webkit-scrollbar-thumb {
     width: 10px;
     height: 10px;
     background-color: rgba(44, 62, 80, 1.0);
     border-radius: 10px;
+	}
 }
-
+/* 0-500小型缩放的显示,同时带出手机端的适配 */
 @media (max-width: 500px) {}
-
+/* 500-1000中型缩放显示,用于电脑的普通缩放 */
 @media (min-width: 501px) {}
-
-#the_shortcuts {
-    float: left;
+/* 正产页面大小,带出页面略微缩放时的样式表 */
+@media (min-width: 1000px) {
+	/* 快捷栏的总体div */
+	#the_shortcuts{
+		/* 向右浮动,字标签继承父标签浮动属性 */
+		float: right;
+		/* 背景颜色,只是为了便于调试快捷栏位置 */
+		background-color: antiquewhite;
+	}
+	/* 快捷栏内的ul的样式表 */
+	#the_shortcuts>ul{
+		/* 定义为行内元素,使其可以横向浮动,不会独占一行 */
+		display: inline;
+		/* 超链接显示字体的颜色,只是为了调试方便 */
+		background-color: aqua;
+		/* 快捷栏的超链接字体大小 */
+		font-size: 50px;
+	}
+	
 }
