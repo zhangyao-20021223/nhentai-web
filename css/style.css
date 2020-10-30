@@ -25,19 +25,33 @@
 @media (min-width: 1000px) {
 	/* 快捷栏的总体div */
 	#the_shortcuts{
-		/* 向右浮动,字标签继承父标签浮动属性 */
-		float: right;
+		/* 向左侧浮动,子标签继承父标签浮动属性 */
+		float: left;
 		/* 背景颜色,只是为了便于调试快捷栏位置 */
 		background-color: antiquewhite;
+		/* 宽度 */
+		/* width: 100%; */
+		/* 高度 */
+		height: auto;
 	}
 	/* 快捷栏内的ul的样式表 */
 	#the_shortcuts>ul{
 		/* 定义为行内元素,使其可以横向浮动,不会独占一行 */
-		display: inline;
+		display: inline-block;
 		/* 超链接显示字体的颜色,只是为了调试方便 */
-		background-color: aqua;
+		/* background-color: aqua; */
 		/* 快捷栏的超链接字体大小 */
 		font-size: 50px;
+		/* 定义外边距大小 */
+		/* margin-left: 1rem; */
+	}
+	#the_shortcuts>ul:nth-child(2){
+		background-color: orangered;
+	}
+	#the_shortcuts>ul:nth-child(1){
+		/* 定义颜色.方便调试 */
+		background-color: aqua;
+		
 	}
 	
 }
